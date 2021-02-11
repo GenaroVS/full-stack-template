@@ -1,0 +1,19 @@
+{
+  "name": "pressable",
+  "version": "1.0.0",
+  "description": "Events Manager",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GenaroVS/events-mgmt.git"
+  },
+  "author": "Genaro V. Salinas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GenaroVS/events-mgmt/issues"
+  },
+  "homepage": "https://github.com/GenaroVS/events-mgmt#readme"
+}

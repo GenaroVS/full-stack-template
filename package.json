@@ -4,7 +4,13 @@
   "description": "Events Manager",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev:build": "webpack serve --config webpack.dev.js",
+    "dev:server": "nodemon ./server/built/index.js",
+    "back:compile": "tsc -w --p tsconfig.backend.json",
+    "front:compile": "tsc -w --p tsconfig.frontend.json",
+    "build": "webpack --config webpack.prod.js",
+    "compile": "tsc -p tsconfig.backend.json",
+    "server": "node .server/built/index.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +21,26 @@
   "bugs": {
     "url": "https://github.com/GenaroVS/events-mgmt/issues"
   },
-  "homepage": "https://github.com/GenaroVS/events-mgmt#readme"
+  "homepage": "https://github.com/GenaroVS/events-mgmt#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "env-cmd": "^10.1.0",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.11",
+    "@types/node": "^14.14.26",
+    "@types/react": "^17.0.1",
+    "@types/react-dom": "^17.0.0",
+    "nodemon": "^2.0.7",
+    "ts-loader": "^8.0.17",
+    "typescript": "^4.1.5",
+    "webpack": "^5.21.2",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2",
+    "webpack-merge": "^5.7.3"
+  }
 }
